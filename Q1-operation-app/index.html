@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>operation app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .input-container {
+      display: flex;
+      width: 100%;
+      margin-bottom: 5vh;
+    }
+    .input-container input {
+      width: 50%;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .btn-container button {
+      padding: 5px 20px;
+    }
+    .output-container {
+      margin-top: 5vh;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <input type="number" class="inputs" />
+        <input type="number" class="inputs" />
+      </div>
+      <div class="btn-container">
+        <button id="plus">plus</button>
+        <button id="minus">minus</button>
+        <button id="divide">divide</button>
+        <button id="multiply">multiply</button>
+      </div>
+    </div>
+    <div class="output-container"></div>
+  </body>
+  <script src="app.js"></script>
+</html>
